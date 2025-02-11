@@ -7,7 +7,7 @@ letter_button = document
   .addEventListener("click", () => {
     console.log("11");
     after_part.innerHTML =
-      "          <img style='width:60vw' class='opened_letter' src='opened_letter.jpg' alt='opened letter' />";
+      "          <img style='width:60vw; min-width: 500px; max-width:500px;' class='opened_letter' src='opened_letter.jpg' alt='opened letter' />";
 
     letter_image.innerHTML = "";
     message.innerHTML = "";
