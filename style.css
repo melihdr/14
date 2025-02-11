@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Stardew;
+  src: url(Stardew_Valley.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Stardew";
+}
+
+html,
+body {
+  height: 100%;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .corner-images {
+  position: absolute;
+}
+
+.container .top-images {
+  position: absolute;
+}
+
+.container .top-left {
+  top: 0;
+  left: 0;
+}
+
+.container .top-right {
+  top: 0;
+  right: 0;
+}
+
+.container .bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.container .bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.container .top {
+  top: 0;
+}
+
+.container .corner-images img {
+  width: 12vw;
+  height: auto;
+  max-height: 15vh;
+}
+
+.letter-button {
+  width: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.letter-button img {
+  width: 70px;
+}
+
+.message {
+  font-size: 30px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
