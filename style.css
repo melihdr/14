@@ -13,80 +13,53 @@
 html,
 body {
   height: 100%;
+
   background-image: url(bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 .container {
-  position: relative;
-  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   height: 100vh;
+}
+
+.container img {
+  object-fit: cover;
+  width: 50px;
+}
+
+.first {
+  place-self: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-
-.container .corner-images {
-  position: absolute;
-}
-
-.container .top-images {
-  position: absolute;
-}
-
-.container .top-left {
-  top: 0;
-  left: 0;
-}
-
-.container .top-right {
-  top: 0;
-  right: 0;
-}
-
-.container .bottom-left {
-  bottom: 0;
-  left: 0;
-}
-
-.container .bottom-right {
-  bottom: 0;
-  right: 0;
-}
-
-.container .top {
-  top: 0;
-}
-
-.container .corner-images img {
-  width: 12vw;
-  height: auto;
-  max-height: 15vh;
+  justify-content: center;
+  gap: 5px;
 }
 
 .letter-button {
-  width: 50px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.letter-button img {
-  width: 70px;
-}
-
-.message {
-  font-size: 30px;
-}
-
-.first {
+.top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.top-two {
+  margin-top: 5vw;
+}
+
+.down {
+  align-self: end;
+}
+
+.down-two {
+  display: flex;
+  justify-content: space-between;
 }
