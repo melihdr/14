@@ -18,4 +18,6 @@ letter_button.addEventListener("click", () => {
 play_button.addEventListener("click", () => {
   record_image_div.innerHTML =
     "<img style='margin: 0; width:107px' src='record.gif' alt='record gif'/>";
+  let audio = document.getElementById("audio");
+  audio.play();
 });
