@@ -56,8 +56,49 @@
         </button>
       </div>
 
-      <div class="down">
-        <div class="down-two"></div>
+      <div
+        class="down"
+        style="
+          display: grid;
+          grid-template-columns: auto 1fr;
+          align-items: start;
+          gap: 20px;
+          margin: auto;
+          visibility: hidden;
+        "
+      >
+        <div class="record_image_div">
+          <img
+            style="margin: 0; width: 100px"
+            src="record.png"
+            alt="record photo"
+          />
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: start;
+          "
+        >
+          <p style="background-color: bisque; width: max-content; padding: 1px">
+            burada stok bitmedi, istedigin kadar dinleyebilirsin
+          </p>
+          <button
+            style="
+              width: max-content;
+              background: none;
+              border: none;
+              background-color: bisque;
+              padding: 1px;
+              cursor: pointer;
+            "
+            class="play_button"
+          >
+            [baslat]
+          </button>
+        </div>
       </div>
     </div>
 

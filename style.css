@@ -56,15 +56,6 @@ body {
   margin-top: 5vw;
 }
 
-.down {
-  align-self: end;
-}
-
-.down-two {
-  display: flex;
-  justify-content: space-between;
-}
-
 .hidden {
   visibility: hidden;
 }
